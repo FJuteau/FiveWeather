@@ -14,4 +14,14 @@ struct Weather {
   var main: String?
   var descritption: String?
   var icon: String?
+  
+  
+  init(with dictionary: [String: Any]) {
+    
+    id = dictionary["id"] as? Int32
+    main = dictionary["main"] as? String
+    descritption = dictionary["description"] as? String
+    icon = dictionary["icon"] as? String
+  }
+  
 }

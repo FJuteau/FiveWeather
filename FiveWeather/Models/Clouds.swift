@@ -11,4 +11,11 @@ import Foundation
 struct Clouds {
   
   var all: Int32?
+  
+  
+  init(with dictionary: [String: Int32]) {
+    
+    all = dictionary["all"]
+  }
+  
 }

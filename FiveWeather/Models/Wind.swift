@@ -12,4 +12,12 @@ struct Wind {
   
   var speed: Int32?
   var degree: Int32?
+  
+  
+  init(with dictionary: [String: Int32]) {
+    
+    speed = dictionary["speed"]
+    degree = dictionary["deg"]
+  }
+  
 }

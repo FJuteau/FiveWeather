@@ -17,4 +17,17 @@ struct Main {
   var seaLevel: Int32?
   var groundLevel: Int32?
   var humidity: Int32?
+  
+  
+  init(with dictionary: [String: Int32]) {
+    
+    temp = dictionary["temp"]
+    minTemp = dictionary["temp_min"]
+    maxTemp = dictionary["temp_max"]
+    pressure = dictionary["pressure"]
+    seaLevel = dictionary["sea_level"]
+    groundLevel = dictionary["grnd_level"]
+    humidity = dictionary["humidity"]
+  }
+  
 }
