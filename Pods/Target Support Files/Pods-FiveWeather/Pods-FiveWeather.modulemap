@@ -1,0 +1,6 @@
+framework module Pods_FiveWeather {
+  umbrella header "Pods-FiveWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}
