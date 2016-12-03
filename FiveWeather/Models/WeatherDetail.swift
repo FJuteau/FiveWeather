@@ -40,4 +40,27 @@ struct WeatherDetail {
     }
   }
   
+  
+  init(with managedWeatherDetail: ManagedWeatherDetail) {
+    
+    if let managedMain = managedWeatherDetail.main {
+      
+      main = Main(with: managedMain)
+    }
+    
+    if let managedWeather = managedWeatherDetail.weather {
+      
+      weather = Weather(with: managedWeather)
+    }
+    
+    if let managedClouds = managedWeatherDetail.clouds {
+      
+      clouds = Clouds(with: managedClouds)
+    }
+    
+    if let managedWind = managedWeatherDetail.wind {
+      
+      wind = Wind(with: managedWind)
+    }
+  }
 }

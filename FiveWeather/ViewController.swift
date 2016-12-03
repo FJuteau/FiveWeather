@@ -13,12 +13,11 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    OpenWeatherService.weatherDetail(success: { weatherDetail in
+    WeatherDetailProvider.weatherDetail(success: { weatherDetail in
       
-      print(weatherDetail)
-    }, failure: { errorString in
-    
-      print(errorString)
+      print("Weather Detail : \(weatherDetail)")
+    }, failure: {
+      print("FAIL")
     })
   }
 

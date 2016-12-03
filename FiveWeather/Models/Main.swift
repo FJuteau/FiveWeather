@@ -30,4 +30,15 @@ struct Main {
     humidity = dictionary["humidity"]
   }
   
+  
+  init(with managedMain: ManagedMain) {
+    
+    temp        = managedMain.temp
+    minTemp     = managedMain.minTemp
+    maxTemp     = managedMain.maxTemp
+    pressure    = managedMain.pressure
+    seaLevel    = managedMain.seaLevel
+    groundLevel = managedMain.groundLevel
+    humidity    = managedMain.humidity
+  }
 }

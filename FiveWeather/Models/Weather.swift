@@ -24,4 +24,12 @@ struct Weather {
     icon = dictionary["icon"] as? String
   }
   
+  
+  init(with managedWeather: ManagedWeather) {
+    
+    id            = managedWeather.id
+    main          = managedWeather.main
+    descritption  = managedWeather.weatherDescription
+    icon          = managedWeather.icon
+  }
 }

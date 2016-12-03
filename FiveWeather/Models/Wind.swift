@@ -20,4 +20,10 @@ struct Wind {
     degree = dictionary["deg"]
   }
   
+  
+  init(with managedWind: ManagedWind) {
+    
+    degree  = managedWind.degree
+    speed   = managedWind.speed
+  }
 }

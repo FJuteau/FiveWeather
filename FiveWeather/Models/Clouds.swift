@@ -18,4 +18,9 @@ struct Clouds {
     all = dictionary["all"]
   }
   
+  
+  init(with managedClouds: ManagedClouds) {
+    
+    all = managedClouds.all
+  }
 }
