@@ -17,6 +17,11 @@
 		42D1C41C1DF314C600097770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C41A1DF314C600097770 /* LaunchScreen.storyboard */; };
 		42D1C4271DF314C600097770 /* FiveWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4261DF314C600097770 /* FiveWeatherTests.swift */; };
 		42D1C4321DF314C600097770 /* FiveWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4311DF314C600097770 /* FiveWeatherUITests.swift */; };
+		42D1C4421DF31A2800097770 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4411DF31A2800097770 /* WeatherDetail.swift */; };
+		42D1C4461DF31A5200097770 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4451DF31A5200097770 /* Clouds.swift */; };
+		42D1C4481DF31A6300097770 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4471DF31A6300097770 /* Main.swift */; };
+		42D1C44A1DF31A7100097770 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4491DF31A7100097770 /* Weather.swift */; };
+		42D1C44C1DF31A7B00097770 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C44B1DF31A7B00097770 /* Wind.swift */; };
 		76EBF74FE75E2FEB8888B512 /* Pods_FiveWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F1C83686CCD6F32AEA49C /* Pods_FiveWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,11 @@
 		42D1C42D1DF314C600097770 /* FiveWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D1C4311DF314C600097770 /* FiveWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveWeatherUITests.swift; sourceTree = "<group>"; };
 		42D1C4331DF314C600097770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D1C4411DF31A2800097770 /* WeatherDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetail.swift; sourceTree = "<group>"; };
+		42D1C4451DF31A5200097770 /* Clouds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		42D1C4471DF31A6300097770 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		42D1C4491DF31A7100097770 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		42D1C44B1DF31A7B00097770 /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		7F6ABBF20FFF5CE067A4FB31 /* Pods_FiveWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F185A6042DE6A4F9DC65F7 /* Pods-FiveWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveWeather/Pods-FiveWeather.release.xcconfig"; sourceTree = "<group>"; };
 		BB74CB6D74B6EC382BD72CF9 /* Pods_FiveWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +139,7 @@
 		42D1C40D1DF314C600097770 /* FiveWeather */ = {
 			isa = PBXGroup;
 			children = (
+				42D1C43F1DF319F600097770 /* Models */,
 				42D1C40E1DF314C600097770 /* AppDelegate.swift */,
 				42D1C4101DF314C600097770 /* ViewController.swift */,
 				42D1C4121DF314C600097770 /* Main.storyboard */,
@@ -156,6 +167,26 @@
 				42D1C4331DF314C600097770 /* Info.plist */,
 			);
 			path = FiveWeatherUITests;
+			sourceTree = "<group>";
+		};
+		42D1C43F1DF319F600097770 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C4401DF319F600097770 /* CoreData */,
+				42D1C4411DF31A2800097770 /* WeatherDetail.swift */,
+				42D1C4451DF31A5200097770 /* Clouds.swift */,
+				42D1C4471DF31A6300097770 /* Main.swift */,
+				42D1C4491DF31A7100097770 /* Weather.swift */,
+				42D1C44B1DF31A7B00097770 /* Wind.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42D1C4401DF319F600097770 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		B9FE5D63E0EB44C64B3B3036 /* Frameworks */ = {
@@ -449,9 +480,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D1C4481DF31A6300097770 /* Main.swift in Sources */,
 				42D1C4111DF314C600097770 /* ViewController.swift in Sources */,
+				42D1C4421DF31A2800097770 /* WeatherDetail.swift in Sources */,
 				42D1C40F1DF314C600097770 /* AppDelegate.swift in Sources */,
 				42D1C4171DF314C600097770 /* FiveWeather.xcdatamodeld in Sources */,
+				42D1C4461DF31A5200097770 /* Clouds.swift in Sources */,
+				42D1C44A1DF31A7100097770 /* Weather.swift in Sources */,
+				42D1C44C1DF31A7B00097770 /* Wind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,6 +740,7 @@
 				42D1C4381DF314C600097770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D1C4391DF314C600097770 /* Build configuration list for PBXNativeTarget "FiveWeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -712,6 +749,7 @@
 				42D1C43B1DF314C600097770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D1C43C1DF314C600097770 /* Build configuration list for PBXNativeTarget "FiveWeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -720,6 +758,7 @@
 				42D1C43E1DF314C600097770 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
