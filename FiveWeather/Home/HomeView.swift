@@ -34,6 +34,8 @@ class HomeView: UIView {
         
         self.iconImageViewWidthConstraint.constant   = image.size.width
         self.iconImageViewHeightConstraint.constant  = image.size.height
+        
+        self.layoutIfNeeded()
       }
     })
   }
