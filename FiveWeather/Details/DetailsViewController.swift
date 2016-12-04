@@ -15,7 +15,8 @@ class DetailsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.navigationController?.navigationItem.title = "Details"
+    self.navigationItem.title = "Details"
+    self.navigationController?.navigationBar.pushItem(self.navigationItem, animated: false)
     
     if let weatherDetail = currentWeatherDetail {
       

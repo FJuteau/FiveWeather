@@ -35,18 +35,18 @@ struct DetailsViewFormatter {
     weatherDescription  = "\(weatherDetail.weather.description)"
     iconName            = weatherDetail.weather.icon
     
-    clouds              = "\(weatherDetail.clouds.all)"
+    clouds              = "\(weatherDetail.clouds.all) %"
     
-    minTemperature      = "\(weatherDetail.main.minTemp)"
-    maxTemperature      = "\(weatherDetail.main.maxTemp)"
-    pressure            = "\(weatherDetail.main.pressure)"
-    seaLevel            = "\(weatherDetail.main.seaLevel)"
-    groundLevel         = "\(weatherDetail.main.groundLevel)"
-    humidity            = "\(weatherDetail.main.humidity)"
+    minTemperature      = "\(weatherDetail.main.minTemp) ° F"
+    maxTemperature      = "\(weatherDetail.main.maxTemp) ° F"
+    pressure            = "\(weatherDetail.main.pressure) hPa"
+    seaLevel            = "\(weatherDetail.main.seaLevel) hPa"
+    groundLevel         = "\(weatherDetail.main.groundLevel) hPa"
+    humidity            = "\(weatherDetail.main.humidity) %"
     
     mainWeather         = "\(weatherDetail.weather.main)"
     
-    windSpeed           = "\(weatherDetail.wind.speed)"
-    windDegree          = "\(weatherDetail.wind.degree)"
+    windSpeed           = "\(weatherDetail.wind.speed) meter/sec"
+    windDegree          = "\(weatherDetail.wind.degree) degrees"
   }
 }
