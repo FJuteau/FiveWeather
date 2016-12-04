@@ -66,8 +66,7 @@ class WeatherCoreDataService {
         }
         
       }
-    }
-    catch {
+    } catch {
       
       insert(weatherDetail: weatherDetail, into: managedContext)
     }
@@ -75,8 +74,7 @@ class WeatherCoreDataService {
     do {
       
       try managedContext.save()
-    }
-    catch { }
+    } catch { }
   }
   
   

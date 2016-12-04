@@ -43,8 +43,7 @@ class OpenWeatherService {
               failure("The JSON Data does not match with the expected one")
             }
           }
-        }
-        catch {
+        } catch {
           
           failure("Could not serialize the OpenWeather data")
         }

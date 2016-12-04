@@ -1,0 +1,28 @@
+[{
+	"noMiss": [{
+		"id": 804,
+		"main": "Clouds",
+		"description": "overcastclouds",
+		"icon": "04d"
+	}],
+	"idMiss": [{
+		"main": "Clouds",
+		"description": "overcastclouds",
+		"icon": "04d"
+	}],
+	"mainMiss": [{
+		"id": 804,
+		"description": "overcastclouds",
+		"icon": "04d"
+	}],
+	"descriptionMiss": [{
+		"id": 804,
+		"description": "overcastclouds",
+		"icon": "04d"
+	}],
+	"iconMiss": [{
+		"id": 804,
+		"main": "Clouds",
+		"description": "overcastclouds"
+	}]
+}]

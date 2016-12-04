@@ -1,0 +1,73 @@
+
+[{"noMiss": {
+    "temp":298.77,
+    "temp_min":298.77,
+    "temp_max":298.774,
+    "pressure":1005.93,
+    "sea_level":1018.18,
+    "grnd_level":1005.93,
+    "humidity":87,
+    "temp_kf":0.26},
+
+"tempMiss": {
+    "temp_min":298.77,
+    "temp_max":298.774,
+    "pressure":1005.93,
+    "sea_level":1018.18,
+    "grnd_level":1005.93,
+    "humidity":87,
+    "temp_kf":0.26},
+ 
+"minTempMiss": {
+    "temp":298.77,
+    "temp_max":298.774,
+    "pressure":1005.93,
+    "sea_level":1018.18,
+    "grnd_level":1005.93,
+    "humidity":87,
+    "temp_kf":0.26},
+ 
+"maxTempMiss": {
+    "temp":298.77,
+    "temp_min":298.77,
+    "pressure":1005.93,
+    "sea_level":1018.18,
+    "grnd_level":1005.93,
+    "humidity":87,
+    "temp_kf":0.26},
+ 
+"pressureMiss": {
+    "temp":298.77,
+    "temp_min":298.77,
+    "temp_max":298.774,
+    "sea_level":1018.18,
+    "grnd_level":1005.93,
+    "humidity":87,
+    "temp_kf":0.26},
+ 
+"seaLevelMiss": {
+    "temp":298.77,
+    "temp_min":298.77,
+    "temp_max":298.774,
+    "pressure":1005.93,
+    "grnd_level":1005.93,
+    "humidity":87,
+    "temp_kf":0.26},
+ 
+"grndLevelMiss": {
+    "temp":298.77,
+    "temp_min":298.77,
+    "temp_max":298.774,
+    "pressure":1005.93,
+    "sea_level":1018.18,
+    "humidity":87,
+    "temp_kf":0.26},
+ 
+"humidityMiss": {
+    "temp":298.77,
+    "temp_min":298.77,
+    "temp_max":298.774,
+    "pressure":1005.93,
+    "sea_level":1018.18,
+    "grnd_level":1005.93,
+    "temp_kf":0.26}}]

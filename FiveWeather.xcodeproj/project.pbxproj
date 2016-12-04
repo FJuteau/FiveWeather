@@ -14,7 +14,6 @@
 		42D1C4171DF314C600097770 /* FiveWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4151DF314C600097770 /* FiveWeather.xcdatamodeld */; };
 		42D1C4191DF314C600097770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C4181DF314C600097770 /* Assets.xcassets */; };
 		42D1C41C1DF314C600097770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C41A1DF314C600097770 /* LaunchScreen.storyboard */; };
-		42D1C4271DF314C600097770 /* FiveWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4261DF314C600097770 /* FiveWeatherTests.swift */; };
 		42D1C4321DF314C600097770 /* FiveWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4311DF314C600097770 /* FiveWeatherUITests.swift */; };
 		42D1C4421DF31A2800097770 /* WeatherDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4411DF31A2800097770 /* WeatherDetail.swift */; };
 		42D1C4461DF31A5200097770 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4451DF31A5200097770 /* Clouds.swift */; };
@@ -45,6 +44,17 @@
 		42D1C4BC1DF476FD00097770 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4BB1DF476FD00097770 /* DetailsViewController.swift */; };
 		42D1C4BE1DF479D700097770 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4BD1DF479D700097770 /* DetailsView.swift */; };
 		42D1C4C01DF479E500097770 /* DetailsViewFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4BF1DF479E500097770 /* DetailsViewFormatter.swift */; };
+		42D1C4C21DF4A3F400097770 /* WeatherDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4C11DF4A3F400097770 /* WeatherDetailTests.swift */; };
+		42D1C4C41DF4A8AD00097770 /* WeatherDetailTestable.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C4C31DF4A8AD00097770 /* WeatherDetailTestable.json */; };
+		42D1C4C81DF4AE4A00097770 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4C51DF4AC9B00097770 /* Helper.swift */; };
+		42D1C4CA1DF4BE8800097770 /* MainTestable.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C4C91DF4BE8800097770 /* MainTestable.json */; };
+		42D1C4CC1DF4BE9C00097770 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4CB1DF4BE9C00097770 /* MainTests.swift */; };
+		42D1C4CE1DF4D0C700097770 /* WeatherTestable.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C4CD1DF4D0C700097770 /* WeatherTestable.json */; };
+		42D1C4D01DF4D0E800097770 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4CF1DF4D0E800097770 /* WeatherTests.swift */; };
+		42D1C4D21DF4D43300097770 /* CloudsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4D11DF4D43300097770 /* CloudsTests.swift */; };
+		42D1C4D91DF4D59800097770 /* CloudsTestable.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C4D71DF4D59800097770 /* CloudsTestable.json */; };
+		42D1C4DA1DF4D59800097770 /* WindTestable.json in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C4D81DF4D59800097770 /* WindTestable.json */; };
+		42D1C4DC1DF4D5A200097770 /* WindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4DB1DF4D5A200097770 /* WindTests.swift */; };
 		76EBF74FE75E2FEB8888B512 /* Pods_FiveWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F1C83686CCD6F32AEA49C /* Pods_FiveWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +88,6 @@
 		42D1C41B1DF314C600097770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42D1C41D1DF314C600097770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D1C4221DF314C600097770 /* FiveWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D1C4261DF314C600097770 /* FiveWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveWeatherTests.swift; sourceTree = "<group>"; };
 		42D1C4281DF314C600097770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42D1C42D1DF314C600097770 /* FiveWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D1C4311DF314C600097770 /* FiveWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveWeatherUITests.swift; sourceTree = "<group>"; };
@@ -113,6 +122,17 @@
 		42D1C4BB1DF476FD00097770 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		42D1C4BD1DF479D700097770 /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		42D1C4BF1DF479E500097770 /* DetailsViewFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewFormatter.swift; sourceTree = "<group>"; };
+		42D1C4C11DF4A3F400097770 /* WeatherDetailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailTests.swift; sourceTree = "<group>"; };
+		42D1C4C31DF4A8AD00097770 /* WeatherDetailTestable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = WeatherDetailTestable.json; path = FiveWeatherTests/WeatherDetailTestable.json; sourceTree = SOURCE_ROOT; };
+		42D1C4C51DF4AC9B00097770 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		42D1C4C91DF4BE8800097770 /* MainTestable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MainTestable.json; path = FiveWeatherTests/MainTestable.json; sourceTree = SOURCE_ROOT; };
+		42D1C4CB1DF4BE9C00097770 /* MainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
+		42D1C4CD1DF4D0C700097770 /* WeatherTestable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeatherTestable.json; sourceTree = "<group>"; };
+		42D1C4CF1DF4D0E800097770 /* WeatherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		42D1C4D11DF4D43300097770 /* CloudsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudsTests.swift; sourceTree = "<group>"; };
+		42D1C4D71DF4D59800097770 /* CloudsTestable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CloudsTestable.json; sourceTree = "<group>"; };
+		42D1C4D81DF4D59800097770 /* WindTestable.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WindTestable.json; sourceTree = "<group>"; };
+		42D1C4DB1DF4D5A200097770 /* WindTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindTests.swift; sourceTree = "<group>"; };
 		7F6ABBF20FFF5CE067A4FB31 /* Pods_FiveWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F185A6042DE6A4F9DC65F7 /* Pods-FiveWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveWeather/Pods-FiveWeather.release.xcconfig"; sourceTree = "<group>"; };
 		BB74CB6D74B6EC382BD72CF9 /* Pods_FiveWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,8 +224,18 @@
 		42D1C4251DF314C600097770 /* FiveWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				42D1C4261DF314C600097770 /* FiveWeatherTests.swift */,
 				42D1C4281DF314C600097770 /* Info.plist */,
+				42D1C4C11DF4A3F400097770 /* WeatherDetailTests.swift */,
+				42D1C4CB1DF4BE9C00097770 /* MainTests.swift */,
+				42D1C4CF1DF4D0E800097770 /* WeatherTests.swift */,
+				42D1C4D11DF4D43300097770 /* CloudsTests.swift */,
+				42D1C4DB1DF4D5A200097770 /* WindTests.swift */,
+				42D1C4C31DF4A8AD00097770 /* WeatherDetailTestable.json */,
+				42D1C4C91DF4BE8800097770 /* MainTestable.json */,
+				42D1C4CD1DF4D0C700097770 /* WeatherTestable.json */,
+				42D1C4D71DF4D59800097770 /* CloudsTestable.json */,
+				42D1C4D81DF4D59800097770 /* WindTestable.json */,
+				42D1C4C51DF4AC9B00097770 /* Helper.swift */,
 			);
 			path = FiveWeatherTests;
 			sourceTree = "<group>";
@@ -420,6 +450,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D1C4CA1DF4BE8800097770 /* MainTestable.json in Resources */,
+				42D1C4D91DF4D59800097770 /* CloudsTestable.json in Resources */,
+				42D1C4DA1DF4D59800097770 /* WindTestable.json in Resources */,
+				42D1C4C41DF4A8AD00097770 /* WeatherDetailTestable.json in Resources */,
+				42D1C4CE1DF4D0C700097770 /* WeatherTestable.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +648,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D1C4271DF314C600097770 /* FiveWeatherTests.swift in Sources */,
+				42D1C4D01DF4D0E800097770 /* WeatherTests.swift in Sources */,
+				42D1C4CC1DF4BE9C00097770 /* MainTests.swift in Sources */,
+				42D1C4D21DF4D43300097770 /* CloudsTests.swift in Sources */,
+				42D1C4C21DF4A3F400097770 /* WeatherDetailTests.swift in Sources */,
+				42D1C4C81DF4AE4A00097770 /* Helper.swift in Sources */,
+				42D1C4DC1DF4D5A200097770 /* WindTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
