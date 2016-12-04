@@ -12,7 +12,7 @@ extension ManagedWind {
   
   func update(with wind: Wind) {
     
-    degree  = wind.degree!
-    speed   = wind.speed!
+    degree  = wind.degree
+    speed   = wind.speed
   }
 }

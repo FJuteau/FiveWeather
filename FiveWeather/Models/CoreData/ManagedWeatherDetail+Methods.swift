@@ -12,24 +12,9 @@ extension ManagedWeatherDetail {
   
   func update(with weatherDetail: WeatherDetail) {
     
-    if let nonManagedMain = weatherDetail.main {
-      
-      main?.update(with: nonManagedMain)
-    }
-    
-    if let nonManagedWeather = weatherDetail.weather {
-      
-      weather?.update(with: nonManagedWeather)
-    }
-    
-    if let nonManagedClouds = weatherDetail.clouds {
-      
-      clouds?.update(with: nonManagedClouds)
-    }
-    
-    if let nonManagedWind = weatherDetail.wind {
-      
-      wind?.update(with: nonManagedWind)
-    }
+    main?.update(with: weatherDetail.main)
+    weather?.update(with: weatherDetail.weather)
+    clouds?.update(with: weatherDetail.clouds)
+    wind?.update(with: weatherDetail.wind)
   }
 }

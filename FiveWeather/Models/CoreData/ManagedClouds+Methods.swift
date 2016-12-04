@@ -12,6 +12,6 @@ extension ManagedClouds {
   
   func update(with clouds: Clouds) {
     
-    all = clouds.all!
+    all = clouds.all
   }
 }

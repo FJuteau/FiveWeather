@@ -12,7 +12,7 @@ extension ManagedWeather {
   
   func update(with weather: Weather) {
     
-    id                  = weather.id!
+    id                  = weather.id
     main                = weather.main
     weatherDescription  = weather.description
     icon                = weather.icon

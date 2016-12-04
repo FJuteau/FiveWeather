@@ -12,12 +12,12 @@ extension ManagedMain {
   
   func update(with main: Main) {
     
-    temp        = main.temp!
-    minTemp     = main.minTemp!
-    maxTemp     = main.maxTemp!
-    pressure    = main.pressure!
-    seaLevel    = main.seaLevel!
-    groundLevel = main.groundLevel!
-    humidity    = main.humidity!
+    temp        = main.temp
+    minTemp     = main.minTemp
+    maxTemp     = main.maxTemp
+    pressure    = main.pressure
+    seaLevel    = main.seaLevel
+    groundLevel = main.groundLevel
+    humidity    = main.humidity
   }
 }

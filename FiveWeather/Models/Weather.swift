@@ -31,11 +31,16 @@ struct Weather {
   }
   
   
-  init(with managedWeather: ManagedWeather) {
+  init?(with managedWeather: ManagedWeather) {
+    
+    guard let dictionaryMain    = managedWeather.main,
+      let dictionaryDescription = managedWeather.weatherDescription,
+      let dictionaryIcon        = managedWeather.icon
+      else { return nil }
     
     id            = managedWeather.id
-    main          = managedWeather.main
-    description  = managedWeather.weatherDescription
-    icon          = managedWeather.icon
+    main          = dictionaryMain
+    description   = dictionaryDescription
+    icon          = dictionaryIcon
   }
 }

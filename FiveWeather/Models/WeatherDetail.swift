@@ -19,46 +19,38 @@ struct WeatherDetail {
   init?(with dictionary: [String: Any]) {
     
     guard let mainDictionary  = dictionary["main"] as? [String: Int32],
-      let dictionaryMain      = Main(with: mainDictionary),
+      let main                = Main(with: mainDictionary),
       
       let weatherArray        = dictionary["weather"] as? [[String: Any]],
       let weatherDictionary   = weatherArray.first,
-      let dictionaryWeather   = Weather(with: weatherDictionary),
+      let weather             = Weather(with: weatherDictionary),
       
       let cloudsDictionary    = dictionary["clouds"] as? [String: Int32],
-      let dictionaryClouds    = Clouds(with: cloudsDictionary),
+      let clouds              = Clouds(with: cloudsDictionary),
       
       let windDictionary      = dictionary["wind"] as? [String: Int32],
-      let dictionaryWind      = Wind(with: windDictionary)
+      let wind                = Wind(with: windDictionary)
     else { return nil }
     
-    main = dictionaryMain
-    weather = dictionaryWeather
-    clouds = dictionaryClouds
-    wind = dictionaryWind
+    self.main     = main
+    self.weather  = weather
+    self.clouds   = clouds
+    self.wind     = wind
   }
   
   
-  init(with managedWeatherDetail: ManagedWeatherDetail) {
+  init?(with managedWeatherDetail: ManagedWeatherDetail) {
     
-    if let managedMain = managedWeatherDetail.main {
-      
-      main = Main(with: managedMain)
-    }
+    guard let managedMain   = managedWeatherDetail.main,
+      let managedWeather    = managedWeatherDetail.weather,
+      let weather           = Weather(with: managedWeather),
+      let managedClouds     = managedWeatherDetail.clouds,
+      let managedWind       = managedWeatherDetail.wind
+      else { return nil }
     
-    if let managedWeather = managedWeatherDetail.weather {
-      
-      weather = Weather(with: managedWeather)
-    }
-    
-    if let managedClouds = managedWeatherDetail.clouds {
-      
-      clouds = Clouds(with: managedClouds)
-    }
-    
-    if let managedWind = managedWeatherDetail.wind {
-      
-      wind = Wind(with: managedWind)
-    }
+      self.main     = Main(with: managedMain)
+      self.weather  = weather
+      self.clouds   = Clouds(with: managedClouds)
+      self.wind     = Wind(with: managedWind)
   }
 }

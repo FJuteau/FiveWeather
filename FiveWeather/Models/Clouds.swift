@@ -15,9 +15,9 @@ struct Clouds {
   
   init?(with dictionary: [String: Int32]) {
     
-    guard let dictionaryAll = dictionary["all"] else { return nil }
+    guard let all = dictionary["all"] else { return nil }
 
-    all = dictionaryAll
+    self.all = all
   }
   
   

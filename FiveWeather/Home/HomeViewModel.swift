@@ -13,14 +13,14 @@ struct HomeViewModel {
   var welcomeString             : String
   var temperatureString         : String
   var weatherDescriptionString  : String
-  var iconName                  : String?
+  var iconName                  : String
   
   init(with weatherDetail: WeatherDetail) {
     
     welcomeString = "In five days, the temperature will be"
     
-    temperatureString = "\(weatherDetail.main?.temp) ° F"
-    weatherDescriptionString = "\(weatherDetail.weather?.description)"
-    iconName = weatherDetail.weather?.icon
+    temperatureString = "\(weatherDetail.main.temp) ° F"
+    weatherDescriptionString = "\(weatherDetail.weather.description)"
+    iconName = weatherDetail.weather.icon
   }
 }

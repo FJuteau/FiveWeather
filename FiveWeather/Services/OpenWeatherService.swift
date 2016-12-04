@@ -35,9 +35,12 @@ class OpenWeatherService {
             // The OpenWeather API delivers the weather for the five next day
             // Therefor we want the jsonDictionary last object that is the weather in five days
             if let listArray = jsonDictionary["list"] as? [[String: Any]],
-              let lastWeatherDetail = listArray.last {
+              let lastWeatherDetail = listArray.last,
+              let weatherDetail = WeatherDetail(with: lastWeatherDetail) {
               
-              success(WeatherDetail(with: lastWeatherDetail))
+              success(weatherDetail)
+            } else {
+              failure("The JSON Data does not match with the expected one")
             }
           }
         }
