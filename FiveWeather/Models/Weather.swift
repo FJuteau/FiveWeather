@@ -12,7 +12,7 @@ struct Weather {
   
   var id: Int32?
   var main: String?
-  var descritption: String?
+  var description: String?
   var icon: String?
   
   
@@ -20,7 +20,7 @@ struct Weather {
     
     id = dictionary["id"] as? Int32
     main = dictionary["main"] as? String
-    descritption = dictionary["description"] as? String
+    description = dictionary["description"] as? String
     icon = dictionary["icon"] as? String
   }
   
@@ -29,7 +29,7 @@ struct Weather {
     
     id            = managedWeather.id
     main          = managedWeather.main
-    descritption  = managedWeather.weatherDescription
+    description  = managedWeather.weatherDescription
     icon          = managedWeather.icon
   }
 }

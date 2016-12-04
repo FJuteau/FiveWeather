@@ -30,6 +30,8 @@
 		42D1C4991DF3238800097770 /* ManagedWind+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4981DF3238800097770 /* ManagedWind+Methods.swift */; };
 		42D1C49B1DF3239400097770 /* ManagedWeatherDetail+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49A1DF3239400097770 /* ManagedWeatherDetail+Methods.swift */; };
 		42D1C49D1DF324AF00097770 /* WeatherDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49C1DF324AF00097770 /* WeatherDetailProvider.swift */; };
+		42D1C4A01DF3278000097770 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49F1DF3278000097770 /* HomeViewModel.swift */; };
+		42D1C4A21DF3299B00097770 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A11DF3299B00097770 /* HomeView.swift */; };
 		76EBF74FE75E2FEB8888B512 /* Pods_FiveWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F1C83686CCD6F32AEA49C /* Pods_FiveWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		42D1C4981DF3238800097770 /* ManagedWind+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWind+Methods.swift"; sourceTree = "<group>"; };
 		42D1C49A1DF3239400097770 /* ManagedWeatherDetail+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWeatherDetail+Methods.swift"; sourceTree = "<group>"; };
 		42D1C49C1DF324AF00097770 /* WeatherDetailProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailProvider.swift; sourceTree = "<group>"; };
+		42D1C49F1DF3278000097770 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		42D1C4A11DF3299B00097770 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7F6ABBF20FFF5CE067A4FB31 /* Pods_FiveWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F185A6042DE6A4F9DC65F7 /* Pods-FiveWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveWeather/Pods-FiveWeather.release.xcconfig"; sourceTree = "<group>"; };
 		BB74CB6D74B6EC382BD72CF9 /* Pods_FiveWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +159,7 @@
 		42D1C40D1DF314C600097770 /* FiveWeather */ = {
 			isa = PBXGroup;
 			children = (
+				42D1C49E1DF3270600097770 /* Home */,
 				42D1C43F1DF319F600097770 /* Models */,
 				42D1C44D1DF31B0E00097770 /* Services */,
 				42D1C40E1DF314C600097770 /* AppDelegate.swift */,
@@ -219,6 +224,15 @@
 				42D1C4901DF3231B00097770 /* WeatherCoreDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		42D1C49E1DF3270600097770 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C49F1DF3278000097770 /* HomeViewModel.swift */,
+				42D1C4A11DF3299B00097770 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		B9FE5D63E0EB44C64B3B3036 /* Frameworks */ = {
@@ -512,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D1C4A01DF3278000097770 /* HomeViewModel.swift in Sources */,
 				42D1C4481DF31A6300097770 /* Main.swift in Sources */,
 				42D1C4111DF314C600097770 /* ViewController.swift in Sources */,
 				42D1C4991DF3238800097770 /* ManagedWind+Methods.swift in Sources */,
@@ -520,6 +535,7 @@
 				42D1C44F1DF31B2500097770 /* OpenWeatherService.swift in Sources */,
 				42D1C4421DF31A2800097770 /* WeatherDetail.swift in Sources */,
 				42D1C40F1DF314C600097770 /* AppDelegate.swift in Sources */,
+				42D1C4A21DF3299B00097770 /* HomeView.swift in Sources */,
 				42D1C4171DF314C600097770 /* FiveWeather.xcdatamodeld in Sources */,
 				42D1C4931DF3236700097770 /* ManagedClouds+Methods.swift in Sources */,
 				42D1C4951DF3237100097770 /* ManagedWeather+Methods.swift in Sources */,

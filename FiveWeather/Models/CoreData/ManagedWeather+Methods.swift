@@ -14,7 +14,7 @@ extension ManagedWeather {
     
     id                  = weather.id!
     main                = weather.main
-    weatherDescription  = weather.descritption
+    weatherDescription  = weather.description
     icon                = weather.icon
   }
 }
