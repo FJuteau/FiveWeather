@@ -21,11 +21,15 @@ class HomeViewController: UIViewController {
       
       let homeViewModel = HomeViewFormatter(with: weatherDetail)
       if let homeView = self.view as? HomeView {
+        
         homeView.configure(with: homeViewModel)
       }
     }, failure: { errorString in
       
-      print(errorString)
+      if let homeView = self.view as? HomeView {
+        
+        homeView.configure(with: errorString)
+      }
     })
   }
   

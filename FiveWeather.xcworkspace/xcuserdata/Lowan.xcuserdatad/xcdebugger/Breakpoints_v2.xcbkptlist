@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FiveWeather/Home/HomeViewController.swift"
-            timestampString = "502563709.356684"
+            timestampString = "502569028.590124"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>

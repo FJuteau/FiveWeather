@@ -15,17 +15,18 @@ class HomeView: UIView {
   @IBOutlet weak var temperatureLabel: UILabel!
   @IBOutlet weak var descriptionLabel: UILabel!
   @IBOutlet weak var iconImageView: UIImageView!
+  @IBOutlet weak var detailsButton: UIButton!
   
   @IBOutlet weak var iconImageViewHeightConstraint: NSLayoutConstraint!
   @IBOutlet weak var iconImageViewWidthConstraint: NSLayoutConstraint!
   
+  @IBOutlet weak var errorLabel: UILabel!
   
   func configure(with viewFormatter: HomeViewFormatter) {
     
     welcomeLabel.text     = viewFormatter.welcome
     temperatureLabel.text = viewFormatter.temperature
     descriptionLabel.text = viewFormatter.weatherDescription
-    
     
     let iconURL = URL(string: "http://openweathermap.org/img/w/\(viewFormatter.iconName).png")
     iconImageView.sd_setImage(with: iconURL, completed: { image, error, cacheType, imageURL in
@@ -38,5 +39,18 @@ class HomeView: UIView {
         self.layoutIfNeeded()
       }
     })
+    
+    errorLabel.removeFromSuperview()
+  }
+  
+  func configure(with errorMessage: String) {
+    
+    errorLabel.text = errorMessage
+    
+    welcomeLabel.removeFromSuperview()
+    temperatureLabel.removeFromSuperview()
+    descriptionLabel.removeFromSuperview()
+    iconImageView.removeFromSuperview()
+    detailsButton.removeFromSuperview()
   }
 }
