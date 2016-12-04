@@ -12,4 +12,19 @@ class DetailsViewController: UIViewController {
   
   var currentWeatherDetail: WeatherDetail?
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    self.navigationController?.navigationItem.title = "Details"
+    
+    if let weatherDetail = currentWeatherDetail {
+      
+      let viewFormatter = DetailsViewFormatter(with: weatherDetail)
+      if let view = self.view as? DetailsView {
+        
+        view.configure(with: viewFormatter)
+      }
+    }
+    
+  }
 }

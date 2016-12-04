@@ -10,7 +10,7 @@ import Foundation
 
 struct Wind {
   
-  var speed: Int32
+  var speed : Int32
   var degree: Int32
   
   
@@ -20,8 +20,8 @@ struct Wind {
       let dictionaryDegree    = dictionary["deg"]
       else { return nil }
     
-    speed = dictionarySpeed
-    degree = dictionaryDegree
+    speed   = dictionarySpeed
+    degree  = dictionaryDegree
   }
   
   

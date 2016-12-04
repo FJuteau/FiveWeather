@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
       
       self.currentWeatherDetail = weatherDetail
       
-      let homeViewModel = HomeViewModel(with: weatherDetail)
+      let homeViewModel = HomeViewFormatter(with: weatherDetail)
       if let homeView = self.view as? HomeView {
         homeView.configure(with: homeViewModel)
       }

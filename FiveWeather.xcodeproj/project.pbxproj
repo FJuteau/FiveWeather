@@ -29,7 +29,7 @@
 		42D1C4991DF3238800097770 /* ManagedWind+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4981DF3238800097770 /* ManagedWind+Methods.swift */; };
 		42D1C49B1DF3239400097770 /* ManagedWeatherDetail+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49A1DF3239400097770 /* ManagedWeatherDetail+Methods.swift */; };
 		42D1C49D1DF324AF00097770 /* WeatherDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49C1DF324AF00097770 /* WeatherDetailProvider.swift */; };
-		42D1C4A01DF3278000097770 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49F1DF3278000097770 /* HomeViewModel.swift */; };
+		42D1C4A01DF3278000097770 /* HomeViewFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49F1DF3278000097770 /* HomeViewFormatter.swift */; };
 		42D1C4A21DF3299B00097770 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A11DF3299B00097770 /* HomeView.swift */; };
 		42D1C4AE1DF4669F00097770 /* ManagedWind+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A41DF4669F00097770 /* ManagedWind+CoreDataClass.swift */; };
 		42D1C4AF1DF4669F00097770 /* ManagedWind+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A51DF4669F00097770 /* ManagedWind+CoreDataProperties.swift */; };
@@ -44,7 +44,7 @@
 		42D1C4B91DF4765D00097770 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4B81DF4765D00097770 /* HomeViewController.swift */; };
 		42D1C4BC1DF476FD00097770 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4BB1DF476FD00097770 /* DetailsViewController.swift */; };
 		42D1C4BE1DF479D700097770 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4BD1DF479D700097770 /* DetailsView.swift */; };
-		42D1C4C01DF479E500097770 /* DetailViewFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4BF1DF479E500097770 /* DetailViewFormatter.swift */; };
+		42D1C4C01DF479E500097770 /* DetailsViewFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4BF1DF479E500097770 /* DetailsViewFormatter.swift */; };
 		76EBF74FE75E2FEB8888B512 /* Pods_FiveWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F1C83686CCD6F32AEA49C /* Pods_FiveWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +96,7 @@
 		42D1C4981DF3238800097770 /* ManagedWind+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWind+Methods.swift"; sourceTree = "<group>"; };
 		42D1C49A1DF3239400097770 /* ManagedWeatherDetail+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWeatherDetail+Methods.swift"; sourceTree = "<group>"; };
 		42D1C49C1DF324AF00097770 /* WeatherDetailProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailProvider.swift; sourceTree = "<group>"; };
-		42D1C49F1DF3278000097770 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		42D1C49F1DF3278000097770 /* HomeViewFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewFormatter.swift; sourceTree = "<group>"; };
 		42D1C4A11DF3299B00097770 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		42D1C4A31DF45CD700097770 /* FiveWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FiveWeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		42D1C4A41DF4669F00097770 /* ManagedWind+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWind+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		42D1C4B81DF4765D00097770 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		42D1C4BB1DF476FD00097770 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		42D1C4BD1DF479D700097770 /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		42D1C4BF1DF479E500097770 /* DetailViewFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewFormatter.swift; sourceTree = "<group>"; };
+		42D1C4BF1DF479E500097770 /* DetailsViewFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewFormatter.swift; sourceTree = "<group>"; };
 		7F6ABBF20FFF5CE067A4FB31 /* Pods_FiveWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F185A6042DE6A4F9DC65F7 /* Pods-FiveWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveWeather/Pods-FiveWeather.release.xcconfig"; sourceTree = "<group>"; };
 		BB74CB6D74B6EC382BD72CF9 /* Pods_FiveWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,8 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				42D1C4B81DF4765D00097770 /* HomeViewController.swift */,
-				42D1C49F1DF3278000097770 /* HomeViewModel.swift */,
 				42D1C4A11DF3299B00097770 /* HomeView.swift */,
+				42D1C49F1DF3278000097770 /* HomeViewFormatter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 			children = (
 				42D1C4BB1DF476FD00097770 /* DetailsViewController.swift */,
 				42D1C4BD1DF479D700097770 /* DetailsView.swift */,
-				42D1C4BF1DF479E500097770 /* DetailViewFormatter.swift */,
+				42D1C4BF1DF479E500097770 /* DetailsViewFormatter.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -576,7 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42D1C4B61DF4669F00097770 /* ManagedMain+CoreDataClass.swift in Sources */,
-				42D1C4A01DF3278000097770 /* HomeViewModel.swift in Sources */,
+				42D1C4A01DF3278000097770 /* HomeViewFormatter.swift in Sources */,
 				42D1C4AF1DF4669F00097770 /* ManagedWind+CoreDataProperties.swift in Sources */,
 				42D1C4B31DF4669F00097770 /* ManagedWeather+CoreDataProperties.swift in Sources */,
 				42D1C4B71DF4669F00097770 /* ManagedMain+CoreDataProperties.swift in Sources */,
@@ -597,7 +597,7 @@
 				42D1C4B11DF4669F00097770 /* ManagedWeatherDetail+CoreDataProperties.swift in Sources */,
 				42D1C4171DF314C600097770 /* FiveWeather.xcdatamodeld in Sources */,
 				42D1C4B91DF4765D00097770 /* HomeViewController.swift in Sources */,
-				42D1C4C01DF479E500097770 /* DetailViewFormatter.swift in Sources */,
+				42D1C4C01DF479E500097770 /* DetailsViewFormatter.swift in Sources */,
 				42D1C4931DF3236700097770 /* ManagedClouds+Methods.swift in Sources */,
 				42D1C4951DF3237100097770 /* ManagedWeather+Methods.swift in Sources */,
 				42D1C4461DF31A5200097770 /* Clouds.swift in Sources */,

@@ -20,17 +20,18 @@ class HomeView: UIView {
   @IBOutlet weak var iconImageViewWidthConstraint: NSLayoutConstraint!
   
   
-  func configure(with viewModel: HomeViewModel) {
+  func configure(with viewFormatter: HomeViewFormatter) {
     
-    welcomeLabel.text     = viewModel.welcomeString
-    temperatureLabel.text = viewModel.temperatureString
-    descriptionLabel.text = viewModel.weatherDescriptionString
+    welcomeLabel.text     = viewFormatter.welcome
+    temperatureLabel.text = viewFormatter.temperature
+    descriptionLabel.text = viewFormatter.weatherDescription
     
     
-    let iconURL = URL(string: "http://openweathermap.org/img/w/\(viewModel.iconName).png")
+    let iconURL = URL(string: "http://openweathermap.org/img/w/\(viewFormatter.iconName).png")
     iconImageView.sd_setImage(with: iconURL, completed: { image, error, cacheType, imageURL in
       
       if let image = image {
+        
         self.iconImageViewWidthConstraint.constant   = image.size.width
         self.iconImageViewHeightConstraint.constant  = image.size.height
       }
