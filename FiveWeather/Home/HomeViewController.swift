@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
   var currentWeatherDetail: WeatherDetail?
   
@@ -17,21 +17,24 @@ class ViewController: UIViewController {
     
     WeatherDetailProvider.weatherDetail(success: { weatherDetail in
       
-      print("Weather Detail : \(weatherDetail)")
       self.currentWeatherDetail = weatherDetail
       
       let homeViewModel = HomeViewModel(with: weatherDetail)
       if let homeView = self.view as? HomeView {
         homeView.configure(with: homeViewModel)
       }
-      
     }, failure: {
+      
       print("FAIL")
     })
-    
-    
   }
-
-
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    if let detailsViewController = segue.destination as? DetailsViewController {
+      
+      detailsViewController.currentWeatherDetail = self.currentWeatherDetail
+    }
+  }
 }
 
