@@ -17,7 +17,23 @@ struct HomeViewFormatter {
   
   init(with weatherDetail: WeatherDetail) {
     
-    welcome             = "In five days, the temperature will be"
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+    
+    if let date = dateFormatter.date(from: weatherDetail.dataTime) {
+      
+      let enDateFormatter = DateFormatter()
+      enDateFormatter.dateStyle = .full
+      enDateFormatter.locale = Locale(identifier: "en_US")
+      
+      let formattedDate = enDateFormatter.string(from: date)
+      
+      welcome = "\(formattedDate), the temperature will be"
+    } else {
+      
+      welcome = "In five days, the temperature will be"
+    }
     
     temperature         = "\(weatherDetail.main.temp) ° F"
     weatherDescription  = "\(weatherDetail.weather.description)"

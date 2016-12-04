@@ -22,6 +22,7 @@
         <relationship name="weatherDetail" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedWeatherDetail" inverseName="weather" inverseEntity="ManagedWeatherDetail" syncable="YES"/>
     </entity>
     <entity name="ManagedWeatherDetail" representedClassName="ManagedWeatherDetail" syncable="YES">
+        <attribute name="dataTime" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="clouds" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedClouds" inverseName="weatherDetail" inverseEntity="ManagedClouds" syncable="YES"/>
         <relationship name="main" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedMain" inverseName="weatherDetail" inverseEntity="ManagedMain" syncable="YES"/>
         <relationship name="weather" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedWeather" inverseName="weatherDetail" inverseEntity="ManagedWeather" syncable="YES"/>
@@ -37,6 +38,6 @@
         <element name="ManagedClouds" positionX="-18" positionY="27" width="128" height="75"/>
         <element name="ManagedMain" positionX="9" positionY="54" width="128" height="165"/>
         <element name="ManagedWind" positionX="27" positionY="72" width="128" height="90"/>
-        <element name="ManagedWeatherDetail" positionX="45" positionY="90" width="128" height="105"/>
+        <element name="ManagedWeatherDetail" positionX="45" positionY="90" width="128" height="120"/>
     </elements>
 </model>

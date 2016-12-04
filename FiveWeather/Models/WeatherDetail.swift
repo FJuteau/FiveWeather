@@ -14,6 +14,7 @@ struct WeatherDetail {
   var weather: Weather
   var clouds: Clouds
   var wind: Wind
+  var dataTime: String
   
   
   init?(with dictionary: [String: Any]) {
@@ -29,13 +30,16 @@ struct WeatherDetail {
       let clouds              = Clouds(with: cloudsDictionary),
       
       let windDictionary      = dictionary["wind"] as? [String: Int32],
-      let wind                = Wind(with: windDictionary)
+      let wind                = Wind(with: windDictionary),
+      
+      let dataTime            = dictionary["dt_txt"] as? String
     else { return nil }
     
     self.main     = main
     self.weather  = weather
     self.clouds   = clouds
     self.wind     = wind
+    self.dataTime = dataTime
   }
   
   
@@ -45,12 +49,14 @@ struct WeatherDetail {
       let managedWeather    = managedWeatherDetail.weather,
       let weather           = Weather(with: managedWeather),
       let managedClouds     = managedWeatherDetail.clouds,
-      let managedWind       = managedWeatherDetail.wind
-      else { return nil }
+      let managedWind       = managedWeatherDetail.wind,
+      let dataTime          = managedWeatherDetail.dataTime
+    else { return nil }
     
-      self.main     = Main(with: managedMain)
-      self.weather  = weather
-      self.clouds   = Clouds(with: managedClouds)
-      self.wind     = Wind(with: managedWind)
+    self.main     = Main(with: managedMain)
+    self.weather  = weather
+    self.clouds   = Clouds(with: managedClouds)
+    self.wind     = Wind(with: managedWind)
+    self.dataTime = dataTime
   }
 }

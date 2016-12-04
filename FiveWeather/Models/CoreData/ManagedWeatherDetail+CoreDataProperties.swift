@@ -16,6 +16,7 @@ extension ManagedWeatherDetail {
         return NSFetchRequest<ManagedWeatherDetail>(entityName: "ManagedWeatherDetail");
     }
 
+    @NSManaged public var dataTime: String?
     @NSManaged public var clouds: ManagedClouds?
     @NSManaged public var main: ManagedMain?
     @NSManaged public var wind: ManagedWind?
