@@ -10,12 +10,14 @@ import Foundation
 
 struct Clouds {
   
-  var all: Int32?
+  var all: Int32
   
   
-  init(with dictionary: [String: Int32]) {
+  init?(with dictionary: [String: Int32]) {
     
-    all = dictionary["all"]
+    guard let dictionaryAll = dictionary["all"] else { return nil }
+
+    all = dictionaryAll
   }
   
   

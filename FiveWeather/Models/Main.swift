@@ -10,24 +10,33 @@ import Foundation
 
 struct Main {
  
-  var temp: Int32?
-  var minTemp: Int32?
-  var maxTemp: Int32?
-  var pressure: Int32?
-  var seaLevel: Int32?
-  var groundLevel: Int32?
-  var humidity: Int32?
+  var temp: Int32
+  var minTemp: Int32
+  var maxTemp: Int32
+  var pressure: Int32
+  var seaLevel: Int32
+  var groundLevel: Int32
+  var humidity: Int32
   
   
-  init(with dictionary: [String: Int32]) {
+  init?(with dictionary: [String: Int32]) {
     
-    temp = dictionary["temp"]
-    minTemp = dictionary["temp_min"]
-    maxTemp = dictionary["temp_max"]
-    pressure = dictionary["pressure"]
-    seaLevel = dictionary["sea_level"]
-    groundLevel = dictionary["grnd_level"]
-    humidity = dictionary["humidity"]
+    guard let dictionaryTemp  = dictionary["temp"],
+    let dictionaryMinTemp     = dictionary["temp_min"],
+    let dictionaryMaxTemp     = dictionary["temp_max"],
+    let dictionaryPressure    = dictionary["pressure"],
+    let dictionarySeaLevel    = dictionary["sea_level"],
+    let dictionaryGroundLevel = dictionary["grnd_level"],
+    let dictionaryHumidity    = dictionary["humidity"]
+    else { return nil }
+    
+    temp = dictionaryTemp
+    minTemp = dictionaryMaxTemp
+    maxTemp = dictionaryMinTemp
+    pressure = dictionaryPressure
+    seaLevel = dictionarySeaLevel
+    groundLevel = dictionaryGroundLevel
+    humidity = dictionaryHumidity
   }
   
   

@@ -18,17 +18,24 @@ struct WeatherDetail {
   
   init?(with dictionary: [String: Any]) {
     
-    guard let mainDictionary = dictionary["main"] as? [String: Int32],
-    let weatherArray = dictionary["weather"] as? [[String: Any]],
-    let weatherDictionary = weatherArray.first,
-    let cloudsDictionary = dictionary["clouds"] as? [String: Int32],
-    let windDictionary = dictionary["wind"] as? [String: Int32]
+    guard let mainDictionary  = dictionary["main"] as? [String: Int32],
+      let dictionaryMain      = Main(with: mainDictionary),
+      
+      let weatherArray        = dictionary["weather"] as? [[String: Any]],
+      let weatherDictionary   = weatherArray.first,
+      let dictionaryWeather   = Weather(with: weatherDictionary),
+      
+      let cloudsDictionary    = dictionary["clouds"] as? [String: Int32],
+      let dictionaryClouds    = Clouds(with: cloudsDictionary),
+      
+      let windDictionary      = dictionary["wind"] as? [String: Int32],
+      let dictionaryWind      = Wind(with: windDictionary)
     else { return nil }
     
-    main = Main(with: mainDictionary)
-    weather = Weather(with: weatherDictionary)
-    clouds = Clouds(with: cloudsDictionary)
-    wind = Wind(with: windDictionary)
+    main = dictionaryMain
+    weather = dictionaryWeather
+    clouds = dictionaryClouds
+    wind = dictionaryWind
   }
   
   

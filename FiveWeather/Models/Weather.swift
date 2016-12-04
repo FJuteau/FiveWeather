@@ -10,18 +10,24 @@ import Foundation
 
 struct Weather {
   
-  var id: Int32?
-  var main: String?
-  var description: String?
-  var icon: String?
+  var id: Int32
+  var main: String
+  var description: String
+  var icon: String
   
   
-  init(with dictionary: [String: Any]) {
+  init?(with dictionary: [String: Any]) {
     
-    id = dictionary["id"] as? Int32
-    main = dictionary["main"] as? String
-    description = dictionary["description"] as? String
-    icon = dictionary["icon"] as? String
+    guard let dictionaryId      = dictionary["id"] as? Int32,
+      let dictionaryMain        = dictionary["main"] as? String,
+      let dictionaryDescription = dictionary["description"] as? String,
+      let dictionaryIcon        = dictionary["icon"] as? String
+      else { return nil }
+    
+    id = dictionaryId
+    main = dictionaryMain
+    description = dictionaryDescription
+    icon = dictionaryIcon
   }
   
   

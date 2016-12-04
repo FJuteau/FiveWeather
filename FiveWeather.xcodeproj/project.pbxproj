@@ -32,6 +32,16 @@
 		42D1C49D1DF324AF00097770 /* WeatherDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49C1DF324AF00097770 /* WeatherDetailProvider.swift */; };
 		42D1C4A01DF3278000097770 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C49F1DF3278000097770 /* HomeViewModel.swift */; };
 		42D1C4A21DF3299B00097770 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A11DF3299B00097770 /* HomeView.swift */; };
+		42D1C4AE1DF4669F00097770 /* ManagedWind+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A41DF4669F00097770 /* ManagedWind+CoreDataClass.swift */; };
+		42D1C4AF1DF4669F00097770 /* ManagedWind+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A51DF4669F00097770 /* ManagedWind+CoreDataProperties.swift */; };
+		42D1C4B01DF4669F00097770 /* ManagedWeatherDetail+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A61DF4669F00097770 /* ManagedWeatherDetail+CoreDataClass.swift */; };
+		42D1C4B11DF4669F00097770 /* ManagedWeatherDetail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A71DF4669F00097770 /* ManagedWeatherDetail+CoreDataProperties.swift */; };
+		42D1C4B21DF4669F00097770 /* ManagedWeather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A81DF4669F00097770 /* ManagedWeather+CoreDataClass.swift */; };
+		42D1C4B31DF4669F00097770 /* ManagedWeather+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4A91DF4669F00097770 /* ManagedWeather+CoreDataProperties.swift */; };
+		42D1C4B41DF4669F00097770 /* ManagedClouds+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4AA1DF4669F00097770 /* ManagedClouds+CoreDataClass.swift */; };
+		42D1C4B51DF4669F00097770 /* ManagedClouds+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4AB1DF4669F00097770 /* ManagedClouds+CoreDataProperties.swift */; };
+		42D1C4B61DF4669F00097770 /* ManagedMain+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4AC1DF4669F00097770 /* ManagedMain+CoreDataClass.swift */; };
+		42D1C4B71DF4669F00097770 /* ManagedMain+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C4AD1DF4669F00097770 /* ManagedMain+CoreDataProperties.swift */; };
 		76EBF74FE75E2FEB8888B512 /* Pods_FiveWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F1C83686CCD6F32AEA49C /* Pods_FiveWeather.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +97,16 @@
 		42D1C49F1DF3278000097770 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		42D1C4A11DF3299B00097770 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		42D1C4A31DF45CD700097770 /* FiveWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FiveWeather-Bridging-Header.h"; sourceTree = "<group>"; };
+		42D1C4A41DF4669F00097770 /* ManagedWind+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWind+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42D1C4A51DF4669F00097770 /* ManagedWind+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWind+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42D1C4A61DF4669F00097770 /* ManagedWeatherDetail+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWeatherDetail+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42D1C4A71DF4669F00097770 /* ManagedWeatherDetail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWeatherDetail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42D1C4A81DF4669F00097770 /* ManagedWeather+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWeather+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42D1C4A91DF4669F00097770 /* ManagedWeather+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedWeather+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42D1C4AA1DF4669F00097770 /* ManagedClouds+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedClouds+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42D1C4AB1DF4669F00097770 /* ManagedClouds+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedClouds+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42D1C4AC1DF4669F00097770 /* ManagedMain+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedMain+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42D1C4AD1DF4669F00097770 /* ManagedMain+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedMain+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7F6ABBF20FFF5CE067A4FB31 /* Pods_FiveWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F185A6042DE6A4F9DC65F7 /* Pods-FiveWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveWeather/Pods-FiveWeather.release.xcconfig"; sourceTree = "<group>"; };
 		BB74CB6D74B6EC382BD72CF9 /* Pods_FiveWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +229,16 @@
 		42D1C4401DF319F600097770 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				42D1C4A41DF4669F00097770 /* ManagedWind+CoreDataClass.swift */,
+				42D1C4A51DF4669F00097770 /* ManagedWind+CoreDataProperties.swift */,
+				42D1C4A61DF4669F00097770 /* ManagedWeatherDetail+CoreDataClass.swift */,
+				42D1C4A71DF4669F00097770 /* ManagedWeatherDetail+CoreDataProperties.swift */,
+				42D1C4A81DF4669F00097770 /* ManagedWeather+CoreDataClass.swift */,
+				42D1C4A91DF4669F00097770 /* ManagedWeather+CoreDataProperties.swift */,
+				42D1C4AA1DF4669F00097770 /* ManagedClouds+CoreDataClass.swift */,
+				42D1C4AB1DF4669F00097770 /* ManagedClouds+CoreDataProperties.swift */,
+				42D1C4AC1DF4669F00097770 /* ManagedMain+CoreDataClass.swift */,
+				42D1C4AD1DF4669F00097770 /* ManagedMain+CoreDataProperties.swift */,
 				42D1C49A1DF3239400097770 /* ManagedWeatherDetail+Methods.swift */,
 				42D1C4921DF3236700097770 /* ManagedClouds+Methods.swift */,
 				42D1C4961DF3237E00097770 /* ManagedMain+Methods.swift */,
@@ -528,16 +558,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D1C4B61DF4669F00097770 /* ManagedMain+CoreDataClass.swift in Sources */,
 				42D1C4A01DF3278000097770 /* HomeViewModel.swift in Sources */,
+				42D1C4AF1DF4669F00097770 /* ManagedWind+CoreDataProperties.swift in Sources */,
+				42D1C4B31DF4669F00097770 /* ManagedWeather+CoreDataProperties.swift in Sources */,
+				42D1C4B71DF4669F00097770 /* ManagedMain+CoreDataProperties.swift in Sources */,
 				42D1C4481DF31A6300097770 /* Main.swift in Sources */,
+				42D1C4B01DF4669F00097770 /* ManagedWeatherDetail+CoreDataClass.swift in Sources */,
 				42D1C4111DF314C600097770 /* ViewController.swift in Sources */,
 				42D1C4991DF3238800097770 /* ManagedWind+Methods.swift in Sources */,
+				42D1C4B51DF4669F00097770 /* ManagedClouds+CoreDataProperties.swift in Sources */,
 				42D1C49B1DF3239400097770 /* ManagedWeatherDetail+Methods.swift in Sources */,
 				42D1C49D1DF324AF00097770 /* WeatherDetailProvider.swift in Sources */,
 				42D1C44F1DF31B2500097770 /* OpenWeatherService.swift in Sources */,
 				42D1C4421DF31A2800097770 /* WeatherDetail.swift in Sources */,
 				42D1C40F1DF314C600097770 /* AppDelegate.swift in Sources */,
+				42D1C4AE1DF4669F00097770 /* ManagedWind+CoreDataClass.swift in Sources */,
 				42D1C4A21DF3299B00097770 /* HomeView.swift in Sources */,
+				42D1C4B21DF4669F00097770 /* ManagedWeather+CoreDataClass.swift in Sources */,
+				42D1C4B11DF4669F00097770 /* ManagedWeatherDetail+CoreDataProperties.swift in Sources */,
 				42D1C4171DF314C600097770 /* FiveWeather.xcdatamodeld in Sources */,
 				42D1C4931DF3236700097770 /* ManagedClouds+Methods.swift in Sources */,
 				42D1C4951DF3237100097770 /* ManagedWeather+Methods.swift in Sources */,
@@ -545,6 +584,7 @@
 				42D1C4911DF3231B00097770 /* WeatherCoreDataService.swift in Sources */,
 				42D1C4971DF3237E00097770 /* ManagedMain+Methods.swift in Sources */,
 				42D1C44A1DF31A7100097770 /* Weather.swift in Sources */,
+				42D1C4B41DF4669F00097770 /* ManagedClouds+CoreDataClass.swift in Sources */,
 				42D1C44C1DF31A7B00097770 /* Wind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
