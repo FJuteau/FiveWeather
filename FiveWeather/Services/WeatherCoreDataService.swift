@@ -13,6 +13,11 @@ import CoreData
 class WeatherCoreDataService {
   
   
+  
+  /** Fetch a WeatherDetail object from CoreData
+   *
+   *  - Returns: a WeatherDetail object if CoreData could retrive it, else returns nil
+   **/
   static func fetchWeatherDetail() -> WeatherDetail? {
     
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
@@ -37,6 +42,11 @@ class WeatherCoreDataService {
     return nil
   }
   
+  
+  /** Save a WeatherDetail object in CoreData current context
+   *
+   * - Parameter weatherDetail: WeatherDetail object to save
+   **/
   static func save(weatherDetail: WeatherDetail) {
     
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
@@ -70,6 +80,12 @@ class WeatherCoreDataService {
   }
   
   
+  /** Insert a WeatherDetail object in the wanted context
+   *
+   * - Parameters:
+   * - weatherDetail: WeatherDetail object to save
+   * - managedContext: Context to save the WeatherDetail object in
+   **/
   static private func insert(weatherDetail: WeatherDetail, into managedContext: NSManagedObjectContext) {
     
     let managedClouds         = NSEntityDescription.insertNewObject(forEntityName: "ManagedClouds", into: managedContext)        as! ManagedClouds

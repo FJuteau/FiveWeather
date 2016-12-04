@@ -10,11 +10,17 @@ import Foundation
 
 class WeatherDetailProvider {
   
-  static func weatherDetail(success: @escaping (WeatherDetail) -> (), failure: @escaping () -> () ) {
+  
+  /** Retrieve a WeatherDetail object from an online or offline source
+   *
+   *  - Parameters:
+   *  - success: a WeatherDetail object
+   *  - failure: a String error message
+   **/
+  static func weatherDetail(success: @escaping (WeatherDetail) -> (), failure: @escaping (String) -> () ) {
     
     OpenWeatherService.weatherDetail(success: { weatherDetail in
       
-      print(" \(weatherDetail)")
       WeatherCoreDataService.save(weatherDetail: weatherDetail)
       success(weatherDetail)
     }, failure: { errorMessage in
@@ -23,7 +29,8 @@ class WeatherDetailProvider {
         
         success(weatherDetail)
       } else {
-        failure()
+        
+        failure("Coud not load CoreData managed objects after an API error : \n \(errorMessage)")
       }
     })
   }

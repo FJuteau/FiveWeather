@@ -23,9 +23,9 @@ class HomeViewController: UIViewController {
       if let homeView = self.view as? HomeView {
         homeView.configure(with: homeViewModel)
       }
-    }, failure: {
+    }, failure: { errorString in
       
-      print("FAIL")
+      print(errorString)
     })
   }
   
