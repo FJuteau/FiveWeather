@@ -86,6 +86,7 @@
 		42D1C49C1DF324AF00097770 /* WeatherDetailProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailProvider.swift; sourceTree = "<group>"; };
 		42D1C49F1DF3278000097770 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		42D1C4A11DF3299B00097770 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		42D1C4A31DF45CD700097770 /* FiveWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FiveWeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		7F6ABBF20FFF5CE067A4FB31 /* Pods_FiveWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F185A6042DE6A4F9DC65F7 /* Pods-FiveWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveWeather/Pods-FiveWeather.release.xcconfig"; sourceTree = "<group>"; };
 		BB74CB6D74B6EC382BD72CF9 /* Pods_FiveWeatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveWeatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +170,7 @@
 				42D1C41A1DF314C600097770 /* LaunchScreen.storyboard */,
 				42D1C41D1DF314C600097770 /* Info.plist */,
 				42D1C4151DF314C600097770 /* FiveWeather.xcdatamodeld */,
+				42D1C4A31DF45CD700097770 /* FiveWeather-Bridging-Header.h */,
 			);
 			path = FiveWeather;
 			sourceTree = "<group>";
@@ -701,6 +703,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FJuteau.FiveWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FiveWeather/FiveWeather-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -715,6 +718,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = FJuteau.FiveWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FiveWeather/FiveWeather-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

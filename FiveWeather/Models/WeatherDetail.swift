@@ -10,34 +10,25 @@ import Foundation
 
 struct WeatherDetail {
   
-  var main: Main?
-  var weather: Weather?
-  var clouds: Clouds?
-  var wind: Wind?
+  var main: Main
+  var weather: Weather
+  var clouds: Clouds
+  var wind: Wind
   
   
-  init(with dictionary: [String: Any]) {
+  init?(with dictionary: [String: Any]) {
     
-    if let mainDictionary = dictionary["main"] as? [String: Int32] {
-      
-      main = Main(with: mainDictionary)
-    }
+    guard let mainDictionary = dictionary["main"] as? [String: Int32],
+    let weatherArray = dictionary["weather"] as? [[String: Any]],
+    let weatherDictionary = weatherArray.first,
+    let cloudsDictionary = dictionary["clouds"] as? [String: Int32],
+    let windDictionary = dictionary["wind"] as? [String: Int32]
+    else { return nil }
     
-    if let weatherArray = dictionary["weather"] as? [[String: Any]],
-      let weatherDictionary = weatherArray.first {
-      
-      weather = Weather(with: weatherDictionary)
-    }
-    
-    if let cloudsDictionary = dictionary["clouds"] as? [String: Int32] {
-      
-      clouds = Clouds(with: cloudsDictionary)
-    }
-    
-    if let windDictionary = dictionary["wind"] as? [String: Int32] {
-      
-      wind = Wind(with: windDictionary)
-    }
+    main = Main(with: mainDictionary)
+    weather = Weather(with: weatherDictionary)
+    clouds = Clouds(with: cloudsDictionary)
+    wind = Wind(with: windDictionary)
   }
   
   
